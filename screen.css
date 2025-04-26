@@ -1,4 +1,129 @@
-/* Add screen styles below */
-a.active {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #f6f6f6;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
     font-weight: bold;
-}
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  nav a:hover {
+    color: #ffd100;
+  }
+  
+  main {
+    flex-grow: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .story {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .story h2 a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  .story h2 a:hover {
+    color: #ff6600;
+  }
+  
+  .meta {
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #444;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+  }
+  
+  footer p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff6600;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  footer p::before {
+    content: "✿ ";
+    font-size: 1.3em;
+  }
+  
+  footer p::after {
+    content: " ✿";
+    font-size: 1.3em;
+  }
+  
+  footer .footer-note {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  footer .footer-note a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer .footer-note a:hover {
+    text-decoration: underline;
+  }  
